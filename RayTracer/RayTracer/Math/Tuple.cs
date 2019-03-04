@@ -29,6 +29,16 @@ namespace RayTracerMath
         {
             return this.W == 0.0f;
         }
+
+        public static Tuple Point(float x, float y, float z)
+        {
+            return new Tuple(x, y, z, 1.0f);
+        }
+
+        public static Tuple Vector(float x, float y, float z)
+        {
+            return new Tuple(x, y, z, 0.0f);
+        }
     }
 
 
