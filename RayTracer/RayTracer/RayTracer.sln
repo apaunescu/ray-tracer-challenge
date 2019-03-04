@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{D70009A9-E1F4-45EF-BFC8-CD462B1DFC91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayTracerMath", "Math\RayTracerMath.csproj", "{D70009A9-E1F4-45EF-BFC8-CD462B1DFC91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayTracerMathTest", "MathTest\RayTracerMathTest.csproj", "{B89177E6-F068-45D5-861B-7EFAE3D6AD15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D70009A9-E1F4-45EF-BFC8-CD462B1DFC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70009A9-E1F4-45EF-BFC8-CD462B1DFC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70009A9-E1F4-45EF-BFC8-CD462B1DFC91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89177E6-F068-45D5-861B-7EFAE3D6AD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89177E6-F068-45D5-861B-7EFAE3D6AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89177E6-F068-45D5-861B-7EFAE3D6AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89177E6-F068-45D5-861B-7EFAE3D6AD15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
