@@ -8,6 +8,8 @@ namespace RayTracerMath
 {
     public class Tuple
     {
+        private const float EPSILON = 0.00001f;
+
         public Tuple(float x, float y, float z, float w)
         {
             X = x;
@@ -28,6 +30,27 @@ namespace RayTracerMath
         public bool isVector()
         {
             return this.W == 0.0f;
+        }
+
+        public bool isEqual(Tuple compare)
+        {
+            if (isFloatEqual(this.X, compare.X) && 
+                isFloatEqual(this.Y, compare.Y) &&
+                isFloatEqual(this.Z, compare.Z) &&
+                isFloatEqual(this.W, compare.W))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool isFloatEqual(float x1, float x2)
+        {
+            if (Math.Abs(x1 - x2) < EPSILON)
+            {
+                return true;
+            }
+            return false;
         }
 
         public static Tuple Point(float x, float y, float z)
