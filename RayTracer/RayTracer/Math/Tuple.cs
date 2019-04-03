@@ -29,7 +29,23 @@ namespace RayTracerMath
         {
             return this.W == 0.0f;
         }
+        public static Tuple Add(Tuple a, Tuple b)
+        {
+            Tuple temp = new Tuple(0, 0, 0, 0);
+            temp.X = a.X + b.X;
+            temp.Y = a.Y + b.Y;
+            temp.Z = a.Z + b.Z;
+            temp.W = a.W + b.W;
+            return temp;
+        }
+        public static Tuple Subtract(Tuple a, Tuple b)
+        {
+            Tuple temp = new Tuple(0, 0, 0, 0);
+            temp.X = a.X - b.X;
+            temp.Y = a.Y - b.Y;
+            temp.Z = a.Z - b.Z;
+            temp.W = a.W - b.W;
+            return temp;
+        }
     }
-
-
 }
